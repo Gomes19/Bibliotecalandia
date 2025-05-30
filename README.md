@@ -1,65 +1,79 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 📚 Sistema de Gestão de Bibliotecas com RFID (SaaS)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Uma plataforma SaaS desenvolvida para facilitar a gestão completa de bibliotecas, com funcionalidades modernas como controle por RFID, agendamento de leitura, notificações em tempo real e impressão de livros.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Funcionalidades Principais
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- 🏢 **Gestão de biblioteca:** controle de livros, usuários, empréstimos e devoluções;
+- 📖 **RFID:** integração com leitor RFID para controle de entrada/saída de livros;
+- 📡 **Consulta em tempo real:** verificação da disponibilidade dos livros online;
+- 📅 **Agendamento:** sistema de reserva e agendamento de leitura;
+- 🛎️ **Notificações automáticas:** alerta ao usuário quando o livro estiver disponível;
+- 🖨️ **Impressão de etiquetas e livros digitalizados.**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🖼️ Capturas de Tela
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+> Substitua os links abaixo pelas suas imagens ou GIFs
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 🔍 Tela de consulta de livros
+![Consulta de livros](https://via.placeholder.com/800x400.png?text=Consulta+de+Livros)
 
-## Laravel Sponsors
+### 📅 Agendamento
+![Agendamento de leitura](https://via.placeholder.com/800x400.png?text=Agendamento+de+Leitura)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 📖 Detalhes do livro
+![Detalhes do livro](https://via.placeholder.com/800x400.png?text=Detalhes+do+Livro)
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## 🧰 Tecnologias Utilizadas
 
-## Contributing
+- **Laravel** – Framework PHP para backend
+- **MySQL** – Banco de dados relacional
+- **RFID** – Leitor para controle automatizado
+- **Blade / Bootstrap** – Front-end
+- **Git** – Versionamento de código
+- (adicione outras que julgar relevantes)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## ⚙️ Instalação e Execução
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### ✅ Pré-requisitos
 
-## Security Vulnerabilities
+- PHP >= 8.1
+- Composer
+- MySQL
+- Leitor RFID configurado
+- (Opcional) Node.js e npm para assets front-end
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 🔧 Passos de instalação
 
-## License
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/nome-do-projeto.git
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# Bibliotecalandia" 
+# Acesse a pasta
+cd nome-do-projeto
+
+# Instale as dependências PHP
+composer install
+
+# Copie o arquivo .env de exemplo e configure
+cp .env.example .env
+
+# Gere a chave da aplicação
+php artisan key:generate
+
+# Configure o banco de dados no .env e rode as migrations
+php artisan migrate
+
+# (Opcional) Instale e compile os assets front-end
+npm install && npm run dev
+
+# Inicie o servidor
+php artisan serve
